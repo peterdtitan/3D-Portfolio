@@ -27,10 +27,6 @@ const Contact = () => {
     });
   };
 
-  // template_gxuax9e
-  // service_3953d4k
-  // dIgaTnz1JqwtQsStO
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
