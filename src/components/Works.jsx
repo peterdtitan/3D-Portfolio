@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { AiFillGithub } from 'react-icons/ai';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
