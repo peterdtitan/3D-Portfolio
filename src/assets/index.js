@@ -33,6 +33,8 @@ import cryptogen from "./cryptogen.png";
 import metrics from "./metrics.png";
 import bookstore from "./bookstore.png";
 
+import peter from "./peter.png";
+
 export {
   logo,
   backend,
@@ -63,5 +65,6 @@ export {
   nstem,
   cryptogen,
   metrics,
-  bookstore
+  bookstore,
+  peter
 };
