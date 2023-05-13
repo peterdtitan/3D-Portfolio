@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
+import { AiFillGithub, AiOutlineMedium, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -23,10 +23,26 @@ const Hero = () => {
             and I build innovative solutions <br className='md:block hidden' />
             for the web.
           </p>
+          <div className="flex gap-4">
+            <button className='flex gap-2 p-1 bg-inherit hover:text-red-500 text-4xl md:text-5xl'
+              onClick={() => window.open("https://github.com/peterdtitan", "_blank")}>
+              <AiFillGithub />
+            </button>
+            <button className='flex gap-2 p-1 bg-inherit hover:text-red-500 text-4xl md:text-5xl'
+              onClick={() => window.open("https://linkedin.com/in/peterokorafor", "_blank")}>
+              <AiFillLinkedin />
+            </button>  
+            <button className='flex gap-2 p-1 bg-inherit hover:text-red-500 text-4xl md:text-5xl'
+              onClick={() => window.open("https://twitter.com/PeterDeTitan", "_blank")}>
+              <AiOutlineTwitter />
+            </button> 
+            <button className='flex gap-2 p-1 bg-inherit hover:text-red-500 text-4xl md:text-5xl'
+              onClick={() => window.open("https://medium.com/@peterdtitan", "_blank")}>
+              <AiOutlineMedium />
+            </button>
+          </div>
         </div>
       </div>
-
-      {/*<ComputersCanvas />*/}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
