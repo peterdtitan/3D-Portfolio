@@ -22,6 +22,7 @@ import {
   afrocentric,
   nstem,
   cryptogen,
+  deras,
   metrics,
   bookstore
 } from "../assets";
@@ -199,6 +200,40 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Dera's Kitchen",
+    description:
+      "Dera's Kitchen is a restaurant website that allows users to order food from their favorite restaurants and have it delivered to their doorstep. It features a Google sign-in with Firebase authentication, a dashboard for restaurant owners to manage their menu. Future updates would include a delivery tracking system, admin order management, and user info dashboard to manage delivery addresses.",
+    tags: [
+      {
+        name: "vercel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firestore",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind-css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "storage",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase-auth",
+        color: "green-text-gradient",
+      },
+      {
+        name: "create-react",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: deras,
+    source_code_link: "https://github.com/peterdtitan/deras-kitchen",
+    live_link: "https://deras-kitchen.vercel.app/"
+  },
   {
     name: "Crypto Gen",
     description:

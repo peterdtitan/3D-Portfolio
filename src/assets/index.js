@@ -32,6 +32,7 @@ import nstem from "./company/nstem.png";
 import cryptogen from "./cryptogen.png";
 import metrics from "./metrics.png";
 import bookstore from "./bookstore.png";
+import deras from "./deras.png";
 
 import peter from "./peter.png";
 
@@ -66,5 +67,6 @@ export {
   cryptogen,
   metrics,
   bookstore,
+  deras,
   peter
 };
