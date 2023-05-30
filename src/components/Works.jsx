@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
 import { AiFillGithub } from 'react-icons/ai';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
 
@@ -19,8 +20,15 @@ const ProjectCard = ({
   live_link
 }) => {
   return (
-    <div>
-      <div className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        options={{
+          max: 40,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer'
+      >
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
@@ -68,8 +76,8 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </div>
-    </div>
+      </Tilt>
+    </motion.div>
   );
 };
 
@@ -81,7 +89,7 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex' id="works">
+      <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
@@ -104,4 +112,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "work");
+export default SectionWrapper(Works, "");
