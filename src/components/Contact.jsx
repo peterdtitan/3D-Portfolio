@@ -31,6 +31,8 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    // TODO: handle submit event when submitting form without email address
+
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
