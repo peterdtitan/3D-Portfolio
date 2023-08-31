@@ -25,11 +25,21 @@ const Tech = () => {
         </motion.div>
       )}
 
-      <div className="flex flex-row flex-wrap justify-center gap-10">
-      {skills.map((skill) => (
-        <div className="flex flex-col h-8">
-          <p>{skill.title}</p>
-          <p>{skill.title}</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {skills.map((skillGroup) => (
+        <div className="green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:shadow-xl transform transition-transform duration-300 ease-in-out" key={skillGroup.id}>
+          <div className="flex flex-col bg-tertiary rounded-[20px] p-4 h-full cursor-default">
+            <h3 className="text-white text-[20px] font-bold text-center">{skillGroup.title}</h3>
+            <div className="flex flex-wrap justify-center gap-2 mt-2 text-center">
+              {skillGroup.skills.map((category) =>
+                category.skills.map((skill) => (
+                  <p key={skill} className={`text-white ${category.color} `}>
+                    {skill}
+                  </p>
+                ))
+              )}
+            </div>
+          </div>
         </div>
       ))}
       </div>
