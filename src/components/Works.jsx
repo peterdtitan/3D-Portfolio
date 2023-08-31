@@ -152,7 +152,7 @@ const Works = () => {
   return (
     <>
       {width < 768 ? (
-        <div >
+        <div>
           <p className={`${styles.sectionSubText} `}>My work</p>
           <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
         </div>
@@ -203,4 +203,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
