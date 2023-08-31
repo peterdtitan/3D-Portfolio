@@ -61,6 +61,99 @@ const services = [
   },
 ];
 
+const skills = [
+  {
+    id: 1,
+    title: "Programming Languages",
+    skills: [
+      {
+        color: "blue-text-gradient",
+        skills: ["Python", "C", "Ruby", "JavaScript"]
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Libraries & Frameworks",
+    skills: [
+      {
+        color: "pink-text-gradient",
+        skills: ["React", "Rails", "jQuery", "Django", "Node.js", "Docker", "Flask"]
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Web Development",
+    skills: [
+      {
+        color: "blue-text-gradient",
+        skills: ["HTML 5", "CSS 3", "SASS", "JavaScript", "Tailwind-CSS", "Bootstrap"]
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: "Database Management",
+    skills: [
+      {
+        color: "green-text-gradient",
+        skills: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"]
+      }
+    ]
+  },
+  {
+    id: 5,
+    title: "Operating Systems",
+    skills: [
+      {
+        color: "pink-text-gradient",
+        skills: ["Windows", "Linux", "Unix"]
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: "Version Control",
+    skills: [
+      {
+        color: "green-text-gradient",
+        skills: ["Git", "SVN"]
+      }
+    ]
+  },
+  {
+    id: 7,
+    title: "Developer Tools",
+    skills: [
+      {
+        color: "pink-text-gradient",
+        skills: ["VSCode", "Visual Studio", "Github", "Slack", "Discord", "Trello", "Figma"]
+      }
+    ]
+  },
+  {
+    id: 8,
+    title: "Software Development Methodologies",
+    skills: [
+      {
+        color: "blue-text-gradient",
+        skills: ["Agile", "Waterfall"]
+      }
+    ]
+  },
+  {
+    id: 9,
+    title: "Professional",
+    skills: [
+      {
+        color: "green-text-gradient",
+        skills: ["Problem-Solving", "Solution-Oriented", "Collaboration", "Communication", "Adaptability"]
+      }
+    ]
+  }
+]
+
 const technologies = [
   {
     name: "HTML 5",
@@ -266,7 +359,7 @@ const projects = [
     ],
     image: cryptogen,
     source_code_link: "https://github.com/peterdtitan/crypto-next",
-    live_link: "https://crypto-gen.org"
+    live_link: "https://crypto-next-seven.vercel.app/"
   },
   {
     name: "Metrics App",
@@ -314,4 +407,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, skills };
